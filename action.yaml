@@ -18,10 +18,6 @@ inputs:
         description: 'The subject of the email'
         required: false
         default: 'GitHub action notification'
-    individual:
-        description: 'Defines if it should be one email with multiple address or multiple emails with a single address'
-        required: falase
-        default: false
     text:
         description: 'The body of the mail as Plain Text'
         required: false
