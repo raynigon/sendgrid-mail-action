@@ -1,4 +1,4 @@
-name: 'SendGrid Mail Action'
+name: 'SendGrid E-Mail Action'
 description: 'Send emails using SendGrid on actions'
 branding:
     icon: 'message-square'
