@@ -1,0 +1,35 @@
+name: 'SendGrid Mail Action'
+description: 'Send emails using SendGrid on actions'
+branding:
+    icon: 'message-square'
+    color: 'blue'
+inputs:
+    sendgrid-token:
+        description: 'The token for sendgrid'
+        required: true
+    to:
+        description: 'The receivers ( can be only one ) that the email will go, seperated by the comma (,) character'
+        required: true
+    from:
+        description: 'The email that will be shown as sender'
+        required: false
+        default: 'sendgridmailaction@github.com'
+    subject:
+        description: 'The subject of the email'
+        required: false
+        default: 'GitHub action notification'
+    individual:
+        description: 'Defines if it should be one email with multiple address or multiple emails with a single address'
+        required: falase
+        default: false
+    text:
+        description: 'The body of the mail as Plain Text'
+        required: false
+        default: ""
+    html:
+        description: 'The body of the mail as HTML'
+        required: false
+        default: ""
+runs:
+    using: 'node12'
+    main: 'out/index.js'
