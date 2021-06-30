@@ -8,11 +8,11 @@ This actions send a mail using the SendGrid API to the defined mails
 
 **Required** The token of the SendGrid that will be used.
 
-### `mail`
+### `to`
 
-**Required** The mail/mails at which the mails will be send. Can be one or more. For example
+**Required** The receivers ( can be only one ) that the email will go, seperated by the comma (,) character. For example
 ```
-  mail: a.mail@mail.to,b.mail@mail.to
+  to: a.mail@mail.to,b.mail@mail.to
 ``` 
 where "," can be anything as it can be defined at the splitterator.
 
@@ -24,24 +24,21 @@ where "," can be anything as it can be defined at the splitterator.
 
 **Optional** The subject of the mail. Default: GitHub action notification
 
-### `individual`
-
-**Optional**  Defines if it should be one email with multiple address or multiple emails with a single address
-      
 ### `text`
 
-**Optional** The subject of the mail. Variables $EVENT$, $ISSUE$, $ACTION$'. Default: The following action $ACTION$ produced an event $EVENT$ 
+**Optional** The content of the mail as plain text.
 
-### `splitterator`
+### `html`
 
-**Optional** The splitterator used for the mail list. Default: ',' 
+**Optional** The content of the mail as HTML Document.
 
 
 ## Example usage
 ```
 - name: SendGrid Action
-  uses: raynigon/sendgrid-mail-action@v1.0
+  uses: raynigon/sendgrid-mail-action@v1.0.2
   with:
     sendgrid-token: 'sample'
-    mail: 'a.mail@mail.to'
+    to: 'a.mail@mail.to'
+    text: 'hello world!'
 ```
