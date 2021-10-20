@@ -26,6 +26,10 @@ inputs:
         description: 'The body of the mail as HTML'
         required: false
         default: ""
+    attachments:
+        description: 'Comma seperated list of files which should be attached to the e-mail'
+        required: false
+        default: ""
 runs:
     using: 'node12'
     main: 'out/index.js'

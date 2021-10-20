@@ -10,21 +10,23 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/raynigon/release-documentation.git"
+        "url": "git+https://github.com/raynigon/sendgrid-mail-action.git"
     },
     "keywords": [],
     "author": "Simon Schneider",
     "license": "Apache 2.0",
     "bugs": {
-        "url": "https://github.com/raynigon/release-documentation/issues"
+        "url": "https://github.com/raynigon/sendgrid-mail-action/issues"
     },
-    "homepage": "https://github.com/raynigon/release-documentation#readme",
+    "homepage": "https://github.com/raynigon/sendgrid-mail-action#readme",
     "dependencies": {
         "@actions/core": "^1.2.7",
         "@actions/github": "^2.0.0",
-        "@sendgrid/mail": "^6.4.0"
+        "@sendgrid/mail": "^6.4.0",
+        "mime-types": "^2.1.33"
     },
     "devDependencies": {
+        "@types/mime-types": "^2.1.1",
         "@types/mustache": "^4.1.1",
         "@types/node": "^15.3.0",
         "@vercel/ncc": "^0.28.5",
