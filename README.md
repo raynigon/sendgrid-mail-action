@@ -32,6 +32,10 @@ where "," can be anything as it can be defined at the splitterator.
 
 **Optional** The content of the mail as HTML Document.
 
+### `attachments`
+
+**Optional** A comma seperated list of files which should be attached to the e-mail. 
+Mime Types will be calculated from the file extension. If no mime type was found `text/plain` is assumed.
 
 ## Example usage
 ```
