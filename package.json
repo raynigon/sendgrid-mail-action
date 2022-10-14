@@ -23,7 +23,7 @@
         "@actions/core": "^1.2.7",
         "@actions/github": "^2.0.0",
         "@sendgrid/mail": "^6.4.0",
-        "mime-types": "^2.1.33"
+        "mime-types": "^2.1.35"
     },
     "devDependencies": {
         "@types/mime-types": "^2.1.1",
