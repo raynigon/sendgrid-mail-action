@@ -40,7 +40,7 @@ Mime Types will be calculated from the file extension. If no mime type was found
 ## Example usage
 ```
 - name: SendGrid Action
-  uses: raynigon/sendgrid-mail-action@v1.0.2
+  uses: raynigon/sendgrid-mail-action@v1.0.4
   with:
     sendgrid-token: 'sample'
     to: 'a.mail@mail.to'
