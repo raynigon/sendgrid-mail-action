@@ -1,0 +1,8 @@
+
+# Basic set up for pip
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
