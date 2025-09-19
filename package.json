@@ -22,7 +22,7 @@
     "dependencies": {
         "@actions/core": "^1.11.1",
         "@actions/github": "^6.0.1",
-        "@sendgrid/mail": "^8.1.5",
+        "@sendgrid/mail": "^8.1.6",
         "mime-types": "^3.0.1"
     },
     "devDependencies": {
