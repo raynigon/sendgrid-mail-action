@@ -21,7 +21,7 @@
     "homepage": "https://github.com/raynigon/sendgrid-mail-action#readme",
     "dependencies": {
         "@actions/core": "^2.0.2",
-        "@actions/github": "^8.0.0",
+        "@actions/github": "^8.0.1",
         "@sendgrid/mail": "^8.1.6",
         "mime-types": "^3.0.2"
     },
